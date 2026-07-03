@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PUC Contact</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: Inter, sans-serif;
+        background-color: lightgrey;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #1E5AA8;
+        color: white;
+        box-shadow: 0 4px 10px;
+    }
+    nav h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        margin-right: 250px;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: goldenrod;
+    }
+    #puclogo {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .contact, .map{
+        text-align: center;
+        font-family: Merriweather, serif;
+        background-color: #f5f7fb;
+        padding: 20px;
+    }
+    .contactform{
+        background-color: white;
+        width: 500px;
+        margin: 20px auto;
+        font-family: Merriweather, serif;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+    input, textarea, select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-top: 4px;
+    }
+    .contactform button{
+        margin-top: 10px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 20px;
+        background-color: orange;
+        color: white;
+        font-family: "Comic Sans MS", serif;
+        cursor: pointer;
+        transition: background-color 0.25s ease;
+    }
+    .contactform button:hover{
+        background-color: #E67E22;
+    }
+    footer{
+        background-color: #1E5AA8;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+    footer a{
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    footer a:hover{
+        color: goldenrod;
+    }
+</style>
+<body>
+<nav>
+    <img src="puc_logo.png" alt="" id="puclogo">
+    <h1>Pannasastra University of Cambodia</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+  <section class="contact">
+    <h2>Contact Information</h2>
+    <p>Address: No. 89 Street 313, Toul Kork, Phnom Penh</p>
+    <p>Phone Number: 023 990 153</p>
+    <p>Email: puc@gmail.com</p>
+    <p>Working Hours: 7:00 AM - 8:00 PM</p>
+  </section>
+  <section class="contactform">
+    <form action="">
+      <h2>Contact Form</h2>
+      <label for="name">Student Name:<input type="text" id="name" name="name" autofocus></label>
+      <label for="email">Email:<input type="email" id="email" name="email"></label>
+      <label for="subject">Subject:<input type="text" id="subject" name="subject"></label>
+      <label for="address">Address:<br><textarea type="text" id="address" name="address"></textarea></label>
+      <button>Submit</button>
+    </form>
+  </section>
+  <section class="map">
+    <h2>Location</h2>
+    <div class="map-box">
+        Google Map Here
+    </div>
+  </section>
+</main>
+<footer>
+    <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+    <p>© 2026 Pannasastra University of Cambodia. All rights reserved.</p>
+</footer>
+</body>
+</html>
