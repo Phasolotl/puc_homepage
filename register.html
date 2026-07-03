@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PUC Register</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: Inter, sans-serif;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #1E5AA8;
+        color: white;
+        box-shadow: 0 4px 10px;
+    }
+    nav h1 {
+        font-size: 40px;
+        letter-spacing: 1px;
+        margin-right: 250px;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: goldenrod;
+    }
+    #puclogo {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .formcard {
+        width: 500px;
+        margin: 50px auto;
+        font-family: Merriweather, serif;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .formcard fieldset{
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+        }
+    input, textarea, select {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-top: 4px;
+    }
+    .radio {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .radio input {
+        width: auto;
+        margin: 0;
+    }
+    .formcard button{
+        margin-top: 10px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 20px;
+        background-color: orange;
+        color: white;
+        font-family: "Comic Sans MS", serif;
+        cursor: pointer;
+        transition: background-color 0.25s ease;
+    }
+    .formcard button:hover{
+        background-color: #E67E22;
+    }
+</style>
+<body>
+<nav>
+    <img src="puc_logo.png" alt="" id="puclogo">
+    <h1>Pannasastra University of Cambodia</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<div class="formcard">
+  <form action="">
+    <h2>Student Registration Form</h2>
+    <label for="name">Student Name:<input type="text" id="name" name="name" autofocus></label>
+    <label for="email">Email:<input type="email" id="email" name="email"></label>
+    <label for="passwrd">Password:<input type="password" id="passwrd" name="passwrd"></label>
+    <label for="phonenum">Phone Number:<input type="tel" id="phonenum" name="phonenum"></label>
+    <label for="date">Date of Birth:<input type="date" id="date" name="date"></label>
+
+    <label>Gender</label>
+    <label class="radio">
+        <input type="radio" name="gender" value="male">
+        Male
+    </label>
+
+    <label class="radio">
+        <input type="radio" name="gender" value="female">
+        Female
+    </label>
+
+    <label class="radio">
+        <input type="radio" name="gender" value="other">
+        Other
+    </label>
+
+     <fieldset>
+       <legend>Course</legend>
+          <label for="course">
+            <select name="course" id="course" required>
+                <option value="" selected disabled >Select your course</option>
+                <option value="python">Python Programming</option>
+                <option value="python">C/C++ Programming</option>
+                <option value="web">Multi-Media and Webdesign</option>
+                <option value="database">Database Management System</option>
+                <option value="database">Data Structure and Algorithm</option>
+                <option value="ai">AI and Machine Learning</option>
+            </select>
+        </label>
+     </fieldset>
+
+     <label for="address">Address:<br><textarea type="text" id="address" name="address"></textarea></label>
+     <button>Submit</button>
+     <button>Reset</button>
+  </form>
+</div>
+</body>
+</html>
